@@ -34,6 +34,7 @@ func main() {
 		" (--ignore-path main.go,src)")
 	op := flag.String("only-path", "", "Only consider file or files under path"+
 		" (--only-path main.go,src)")
+	maxReviewers := flag.Int("reviewers", 0, "Show top X reviewers")
 
 	flag.Parse()
 
